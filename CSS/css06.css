@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+p.one{
+	background-image: url("../Images/bg1.jpg");
+}
+p.two{
+	background-image: url("../Images/bg2.jpg");
+}
+p.three{
+	color: aliceblue;
+	background-image: url("../Images/bg3.jpg")
+}

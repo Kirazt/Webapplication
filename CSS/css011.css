@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+}
+header{
+	padding: 1em;
+	color: white;
+	background-color: dodgerblue;
+	clear: left;
+	text-align: center;
+}
+footer{
+	padding: 1em;
+	height:50px;
+	color: white;
+	background-color: dodgerblue;
+	clear: both;
+	text-align: center;
+}
+nav.head-link{
+	background-color: aqua;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+nav a{
+	float: none;
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+nav:hover a{
+	text-decoration: none;
+	cursor: pointer;
+}
+section.left{
+	background: #4CF79F;
+	float: left;
+	width: 10%;
+	min-height: 900px;
+}
+section.right{
+	background: #4CF79F;
+	float: right;
+	width: 20%;
+	min-height: 900px;
+}
+section a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+div.one{
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid;
+	background: #EEF488;
+	border-radius: 15%;
+	margin: 20px;
+	min-height: 250px;
+}
+div.two{
+	text-align: center;
+	font-size: 20px;
+	border: 1px solid;
+	background: #EEF488;
+	border-radius: 15%;
+	margin: 20px;
+	min-height: 250px;
+}
+section.center{
+	background: #FFFFFF;
+	min-height: 900px;
+	width: 1300px;
+	border: 1px solid;
+	float: left;
+	margin-left: 10px;
+}
+div.mot{
+	border: 1px solid;
+	width: 40%;
+	min-height: 250px;
+	background: #CFCFCF;
+	margin: 10px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 100px;
+}
+div.hai{
+	border: 1px solid;
+	width: 40%;
+	min-height: 250px;
+	background: #CFCFCF;
+	margin: 10px;
+	margin-left: 100px;
+	float: left;
+	margin-top: 100px;
+}
+div.ba{
+	border: 1px solid;
+	width: 40%;
+	min-height: 250px;
+	background: #CFCFCF;
+	margin: 10px;
+	margin-left: 50px;
+	margin-top: 100px;
+	float: left;
+}
+div.bon{
+	bborder: 1px solid;
+	width: 40%;
+	max-height: 250px;
+	background: #CFCFCF;
+	margin: 10px;
+	margin-left: 100px;
+	margin-top: 100px;
+	float: left;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}

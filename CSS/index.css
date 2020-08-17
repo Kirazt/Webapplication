@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+.menu{
+	width: 100%;
+	background: #232323;
+	min-height: 50px;
+	position: fixed;
+	z-index: 100;	
+	top: 0;
+}
+.menuico1{
+	float: left;
+	border-radius: 20px;
+	min-height: 50px;
+	width: 50px;
+	padding-left: 5px;
+}
+.header{
+	margin-top: 50px;
+	width: 100%;
+	min-height: 750px;
+	background-image: url("../Images/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	z-index: 1;
+}
+.header p:nth-child(1){
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 70px;
+	color: #F5F5F5;
+	padding-top: 200px;
+	
+}
+.header p:nth-child(2){
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	color: #F5F5F5;
+	padding-top: 50px;
+}
+.navhead{
+	position: relative;
+	top: 30px;
+	min-height: 70px;
+	width: 100%;
+	color: #FFFFFF;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+}
+.navspace{
+	width: 100%;
+	min-height: 70px;
+}
+.navleft{
+	float: left;
+	position: relative;
+	width: 15%;
+	height: 1440px;
+	background-color: #000000;
+	text-align: center;
+}
+.navleftin{
+	min-height: 250px;
+	width: 100%;
+	text-align: center;
+}
+.img{
+	transition: transform .2s;
+}
+.img:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.footer{
+	clear: both;
+	position: relative;
+	background-color: #351C1C;
+	color: aliceblue;
+	min-height: 270px;
+	text-align: center;
+	width: 100%;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 40px;
+}
+.footer p{
+	position: relative;
+	top: 100px;
+}
+.content{
+	position: relative;
+	float: right;
+	width: 85%;
+	height: auto;
+	text-align: center;
+}
+.start{
+	background: #FFFFFF;
+	width: 100%;
+}
+.start p{
+	position: relative;
+	top: 300px;
+	font-size: 70px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.content p:nth-child(1){
+	position: relative;
+	top: 50px;
+	font-size: 40px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color: #000000;
+}
+#inmenu{
+	position: relative;
+	text-align: center;
+	float: right;
+	right: 20px;
+	top: 5px;
+	min-height: 40px;
+	width: 150px;
+	border-radius: 20px;
+	background-color: #FDFDFD;
+	font-size: 20px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#inmenu li{
+   position: relative;
+	top: 5px;
+   list-style-type: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+#inmenu:hover{
+	background-color: #000000;
+}
+#inmenu li:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#submenu{
+	display: none;
+}
+#submenu li{
+	display: block;
+	min-height: 40px;
+	background-color: #FFFFFF;
+	color: #FFFFFF;
+	min-width: 150px;
+}
+#submenu li:hover{
+	background-color: #000000;
+}
+#submenu li a{
+	text-decoration: none;
+	color: #000000;
+}
+#submenu li a:hover{
+	color: #FFFFFF;
+}
+#submenu li:nth-child(1){
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	padding-top: 10px;
+}
+#submenu li:nth-last-child(1){
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-bottom: 10xp;
+}
+#inmenu li:hover #submenu{
+	display: block;
+    position: absolute;
+	padding-top: 5px;
+}

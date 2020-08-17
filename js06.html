@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js06</title>
+	<script type="text/javascript" src="JS/js06.js"></script>
+</head>
+
+<body>
+	<table border="1px" width="600px">
+		<caption>Đăng kí thành viên</caption>
+		<tr>
+			<th>Tên đăng nhập</th>
+			<td><input type="text" id="name"></td>
+		</tr>
+		<tr>
+			<th>Mật khẩu</th>
+			<td><input type="password" id="pass"></td>
+		</tr>
+		<tr>
+			<th>Ngày sinh</th>
+			<td><input type="text" id="date"></td>
+		</tr>
+		<tr>
+			<th>Giới tính</th>
+			<td>
+				<input type="radio" id="male" name="sex">Nam
+				<input type="radio" id="female" name="sex">Nữ
+			</td>
+		</tr>
+		<tr>
+			<th>Vấn đề bạn quan tâm</th>
+			<td><select>
+				<option id="sport">Thể thao</option>
+				<option id="entertainment">Giải trí</option>
+				<option id="news">Tin tức</option>
+				</select></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Đăng ký" onClick="final()"></td>
+			<td><input type="button" value="Hủy" onClick="location.href='js06.html'"></td>
+		</tr>
+		<tr>
+			<td colspan="2" height="400px">
+				<p id="finalname"></p>
+				<p id="finalsex"></p>
+				<p id="finalpass"></p>
+				<p id="finaldate"></p>
+				<p id="finaljoy"></p>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+a.default{
+	color:#29F346;
+	text-decoration: none;
+}
+a.clickon{
+	color: #183BAB;
+	text-decoration: none;
+}
+a.onLink{
+	color: #B53537;
+	text-decoration: underline;
+}
+a.clicklink:link{
+	color: green;
+	text-decoration: none;
+}
+a.clicklink:hover{
+	color: green;
+	text-decoration: underline;
+}

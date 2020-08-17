@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js07</title>
+</head>
+
+<body>
+	<form>
+	<table border="1px" width="600px" bgcolor="#FFB8F8">
+		<tr>
+		<td colspan="2" align="center"><h3><font color="#5F71FF">Đăng kí mua hàng</font></h3></td>
+		</tr>
+		<tr>
+			<th>Họ</th>
+			<td><input type="text" id="lastname" pattern="[A-Za-z]{1,15}" required></td>
+		</tr>
+		<tr>
+			<th>Tên</th>
+			<td><input type="text" id="firstname" pattern="[A-Za-z]{1,15}" required ></td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td><input type="email" id="email" required></td>
+		</tr>
+		<tr>
+			<th>Số điện thoại</th>
+			<td>
+				<input type="tel" id="phone" pattern="[0-9]{10}" title="Chỉ chấp nhận 10 số" required>
+			</td>
+		</tr>
+		<tr>
+			<th>Số lượng mua</th>
+			<td>
+				<input type="text" id="value" pattern="[0-9]{1,100}" title="Chỉ chấp nhận số" required>
+			</td>
+		</tr>
+		<tr>
+			<th>Ngày nhận hàng</th>
+			<td><input type="date" id="date" required></td>
+		</tr>
+		<tr>
+			<th>Thanh toán</th>
+			<td>
+					<input type="radio" name="choose" required>Chuyển khoản
+			        <input type="radio"  name="choose" required>Trực tiếp khi giao hàng
+			</td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Đăng kí mua"></td>
+				<td><input type="button" value="Hủy" onClick="location.href='js07.html'"></td>
+		</tr>
+	</table></form>
+</body>
+</html>

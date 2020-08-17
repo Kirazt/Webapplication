@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.contentbox{
+	position: relative;
+	float: left;
+	min-height: 200px;
+	border-radius: 20px;
+	margin-left: 150px;
+	margin-top: 150px;
+}
+.contentbox p{
+	position: relative;
+	top: 15px;
+	font-size: 25px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}

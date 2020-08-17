@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	position: absolute;
+	width: 800px;
+	height: 1000px;
+}
+h1{
+	color: #0CF84B;
+}
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+
+#menu ul {
+  background: #4ED7F4;
+  list-style-type: none;
+  text-align: center;
+}
+#menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
+li.one{
+	color: #E3F887;
+	text-shadow: #999999 10px 10px 3px;
+	text-decoration: none;
+	text-align: left
+}
+li.one:hover{
+	color: #1D05E9;
+	text-shadow: #999999 10px 10px 3px;
+	text-decoration: underline;
+	text-align: left
+}
+a.three{
+	color: aquamarine;
+	text-decoration: none;
+}
+a.three:hover{
+	color: antiquewhite;
+	text-decoration: underline;
+}
+input.one{
+	background: #4FA5EC;
+}
+input.one:hover{
+	background: #FFFFFF;
+}
+input#submit {
+    padding: 7px;
+    width: 10%;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+}
+input#submit:hover{
+ 
+    background: linear-gradient(to right, #fc466b, #3f5efb); 
+}

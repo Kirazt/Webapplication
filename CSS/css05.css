@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	border: 1px solid black;
+}
+h1{
+	background-color: #868383;
+	border: solid;
+}
+p.one{
+	border: 1px solid;
+	border-width: 2px;
+}
+span.one-line{
+	background-color: #868383;
+	border: 2px solid;
+}
+img.one{
+	border: groove;
+	border-width: 5px;
+}
+p.two{
+	border: dotted;
+	border-color: aqua;
+}
+span.two-line{
+	background-color: #868383;
+	border: dotted;
+	border-color: orangered;
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js03</title>
+	<script type="text/javascript" src="JS/js03.js"></script>
+</head>
+
+<body>
+	<table border="1px">
+	<caption><h1>Các Phép Tính Số Học</h1></caption>
+		<tr>
+			<th>Số thứ 1</th>
+			<td><input type="text" id="a"></td>
+		</tr>
+		<tr>
+			<th>Số thứ 2</th>
+			<td><input type="text" id="b"></td>
+		</tr>
+		<tr>
+			<th>Chọn phép toán</th>
+			<td>
+				<input type="radio" id="cong" name="math"  >Cộng<br>
+				<input type="radio" id="tru" name="math" value="2" >Trừ<br>
+				<input type="radio" id="nhan" name="math" value="3" >Nhân<br>
+				<input type="radio" id="chia" name="math" value="4" >Chia
+			</td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Thực hiện" onClick="Tinh()">
+				<input type="button" value="Reset" onClick="location.href='js03.html'">
+			</td>
+			<td id="ketqua"></td>
+		</tr>
+	</table>
+</body>
+</html>

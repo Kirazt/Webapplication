@@ -2,15 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>js010</title>
-	<script type="text/javascript" src="JS/js010.js"></script>
+<title>Untitled Document</title>
+<script type="text/javascript" src="JS/js010.js"></script>
 </head>
 
 <body>
-	Nhập số phần tử: <input type="text" id="arrnum"><br><br>
-	<input type="button" value="Tạo mảng" onClick="createarr()">
-	<input type="button" value="Sắp xếp mảng tăng" onClick="biggerarr()">
-	<input type="button" value="Sắp xếp mảng giảm" onClick="smallerarr()"><br>
-	<p>Mảng Ban Đầu: </p>
+  Nhập số phần tử: <input type="text" id="numarr" required><br>
+  <input value="Tạo mảng" type="button" onClick="createarr()">
+  <input type="button" value="Tạo mảng tăng dần" onClick="biggerarr()">
+  <input type="button" value="Tạp mảng giảm dần" onClick="smallerarr()"><br>
+  <div id="start"></div><br>
+  <div id="bigger"></div><br>
+  <div id="smaller"></div>
 </body>
 </html>

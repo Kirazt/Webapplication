@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jq06</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		#d1{
+			min-height: 50px;
+			width: 100px;
+			background-color:#FF6668;
+			position:relative;
+		}
+		input{
+			margin-top: 500px;
+		}
+	</style>
+</head>
+
+<body>
+		<div id="d1"></div>
+	<input type="button" value="Move up" id="up">
+	<input type="button" value="Move down" id="down">
+	<input type="button" value="Move left" id="left">
+	<input type="button" value="Move right" id="right">
+	<script>
+		$().ready(function(){
+			$("#up").click(function(){
+				$("#d1").animate({
+				  top: '-=20'
+				});
+			})
+			$("#down").click(function(){
+				$("#d1").animate({
+				  top: '+=20'
+				});
+			})
+			$("#left").click(function(){
+				$("#d1").animate({
+				  left: '-=20'
+				});
+			})
+			$("#right").click(function(){
+				$("#d1").animate({
+				  left: '+=20'
+				});
+			})
+		})
+	</script>
+</body>
+</html>

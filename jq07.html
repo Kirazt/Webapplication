@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jq07</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		div{
+			float: left;
+			min-height: 80px;
+			width: 70px;
+			background: #BDBDBD;
+			text-align: center;
+			transition: .2s;
+			position: relative;
+		}
+		p{
+			margin-top: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="h1"><p>1</p></div>
+	<div id="h2"><p>2</p></div>
+	<div id="h3"><p>3</p></div>
+	<div id="h4"><p>4</p></div>
+	<div id="h5"><p>5</p></div>
+	<script>
+		$().ready(function(){
+			$("#h1").hover(function(){
+				$("#h1").css({
+					"transform": " scaleX(1.5)",
+					"background": "#E4E4E4",
+					"font-size": "23px",
+					"z-index": "99"
+				})
+			})
+			$("#h1").mouseleave(function(){
+				$("#h1").css({
+					"transform": "",
+					"background": "",
+					"font-size": "",
+					"z-index": ""
+				})
+			})
+			$("#h2").hover(function(){
+				$("#h2").css({
+					"transform": " scaleX(1.4)",
+					"background": "#E4E4E4",
+					"font-size": "23px",
+					"z-index": "99"
+				})
+			})
+			$("#h2").mouseleave(function(){
+				$("#h2").css({
+					"transform": "",
+					"background": "",
+					"font-size": "",
+					"z-index": ""
+				})
+			})
+			$("#h3").hover(function(){
+				$("#h3").css({
+					"transform": " scaleX(1.4)",
+					"background": "#E4E4E4",
+					"font-size": "23px",
+					"z-index": "99"
+				})
+			})
+			$("#h3").mouseleave(function(){
+				$("#h3").css({
+					"transform": "",
+					"background": "",
+					"font-size": "",
+					"z-index": ""
+				})
+			})
+			$("#h4").hover(function(){
+				$("#h4").css({
+					"transform": " scaleX(1.4)",
+					"background": "#E4E4E4",
+					"font-size": "23px",
+					"z-index": "99"
+				})
+			})
+			$("#h4").mouseleave(function(){
+				$("#h4").css({
+					"transform": "",
+					"background": "",
+					"font-size": "",
+					"z-index": ""
+				})
+			})
+			$("#h5").hover(function(){
+				$("#h5").css({
+					"transform": " scaleX(1.4)",
+					"background": "#E4E4E4",
+					"font-size": "23px",
+					"z-index": "99"
+				})
+			})
+			$("#h5").mouseleave(function(){
+				$("#h5").css({
+					"transform": "",
+					"background": "",
+					"font-size": "",
+					"z-index": ""
+				})
+			})
+		})
+	</script>
+</body>
+</html>

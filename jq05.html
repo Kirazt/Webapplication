@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jq05</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/jq04.js"></script>
+</head>
+
+<body>
+	<img src="Images/Shark-swimming-ocean.jpg" height="300px" width="300px" alt="error" id="img">
+	<script>
+		$().ready(function(){
+			$("#img").hover(function(){
+				$("#img").css({height: '+=50%', width: '+=50%'});
+			})
+			$("#img").mouseout(function(){
+				$("#img").css({height: "", width: ""});
+			})
+		})
+	</script>
+</body>
+</html>

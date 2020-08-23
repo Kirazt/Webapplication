@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>js019</title>
+</head>
+
+<body>
+	<canvas id="drawing" width="200px" height="200px"></canvas>
+	<script>
+		var canvas= document.getElementById("drawing");
+		var ctx= canvas.getContext("2d");
+		//Hinh Vuong
+		ctx.fillStyle="rgb(52, 225, 235)";
+		ctx.fillRect(0,0,200,200);
+		//Hinh tron
+		ctx.beginPath();
+		ctx.arc(100,100,100,0,2*Math.PI);
+		ctx.stroke();
+		ctx.fillStyle="rgb(235, 70, 70)";
+		ctx.fill();
+		//Hinh thoi
+		ctx.beginPath();	
+		ctx.rotate(Math.PI/4);	
+		ctx.strokeRect(70,-70,140,140);
+		ctx.strokeStyle="rgb(235, 70, 70)";
+		ctx.fillStyle="rgb(240, 255, 71)";
+		ctx.fillRect(70,-70,140,140);
+		//Text
+		ctx.beginPath();
+		ctx.rotate(-Math.PI/4);	
+		ctx.font="bold 30pt Arial";	
+		ctx.strokeStyle='blue';
+		ctx.fillStyle='white';
+		ctx.fillText("HTML5",35,110);
+		ctx.strokeText("HTML5",35,110)
+	</script>
+</body>
+</html>

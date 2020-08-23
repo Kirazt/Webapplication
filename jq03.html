@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jq03</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="JS/jq03.js"></script>
+	<style>
+		table{
+			border-collapse: separate;
+			border-spacing: 0;
+		}
+		table tr:first-child{
+			border-color: #5BF768;
+			background-color: #C6F3FF;
+		}
+		table tr{
+			border-color: #FFA04D;
+		}
+	</style>
+</head>
+
+<body>
+	<table width="600px" border="1px">
+		<caption><h1>Bảng giá vật tư</h1></caption>
+		<tr>
+			<th width="300px">Tên vật tư</th>
+			<th width="300px">Đơn vị tính</th>
+			<th width="300px">Đơn giá</th>
+		</tr>
+		<tr id="1">
+			<td>Cát</td>
+			<td>Khối</td>
+			<td>77,000</td>
+		</tr>
+		<tr>
+			<td>Đá</td>
+			<td>Khối</td>
+			<td>90,000</td>
+		</tr>
+		<tr id="2">
+			<td>Xi măng Hà Tiên loại 1</td>
+			<td>Bao</td>
+			<td>120,000</td>
+		</tr>
+		<tr>
+			<td>Xi măng Hà Tiên loại 2</td>
+			<td>Bao</td>
+			<td>100,000</td>
+		</tr>
+	</table>
+	<input type="button" value="Đổi màu nền" id="change">
+	<input type="button" value="Màu nền mặc định" id="default">
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jq08</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style>
+		body{
+			text-align: center;
+		}
+		.d1{
+			margin-top: 20%;
+			margin-left: 5%;
+			min-height: 100px;
+			width: 100px;
+			border: 1px solid;
+			float: left;
+			background-image: url("Images/arrow1.png");
+			background-position: center;
+			background-size: cover;
+		}
+		.d2{
+			margin-top: 5%;
+			margin-left: 17%;
+			min-height: 600px;
+			width: 800px;
+			float: left;	
+			position: relative;
+		}
+		.d3{
+			margin-top: 20%;
+			margin-right: 5%;
+			min-height: 100px;
+			width: 100px;
+			border: 1px solid;
+			float: right;
+			background-image: url("Images/arrow.png");
+			background-position: center;
+			background-size: cover;
+		}
+		.d2 img{
+			display: none;
+		}
+		.d2 img.active{
+			display: block;
+			border: 2px solid;
+		}
+	</style>
+</head>
+
+<body>
+	<h3>Slide show</h3>
+	<div class="d1"></div>
+	<div class="d2">
+		<img src="Images/Shark-swimming-ocean.jpg" alt="error">
+		<img src="Images/tiger.jpg" class="active" alt="error">
+		<img src="Images/Elephant-3.jpg" alt="error">
+	</div>
+	<div class="d3"></div>
+	<script>
+		$().ready(function(){
+			$(".d1").click(function(){
+				var currentimg= $(".active");
+				var nextimg= currentimg.next();
+				if(nextimg.length){
+					nextimg.addClass("active");
+					currentimg.removeClass("active")
+				}
+				else{
+					$(".d2 img").first().addClass("active");
+					currentimg.removeClass("active");
+				}
+			})
+			$(".d3").click(function(){
+				var currentimg= $(".active");
+				var previmg= currentimg.prev();
+				if(previmg.length){
+					previmg.addClass("active");
+					currentimg.removeClass("active");
+				}
+				else{
+					$(".d2 img").last().addClass("active");
+					currentimg.removeClass("active");
+				}
+			})
+			function loop(){
+				var currentimg= $(".active");
+				var nextimg= currentimg.next();
+				if(nextimg.length){
+					nextimg.addClass("active");
+					currentimg.removeClass("active")
+				}
+				else{
+					$(".d2 img").first().addClass("active");
+					currentimg.removeClass("active");
+				}
+			}
+			setInterval(loop,3000);
+		})
+	</script>
+</body>
+</html>
